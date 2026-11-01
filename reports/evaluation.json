@@ -1,0 +1,156 @@
+{
+  "model_version": "a58d015b184527ab",
+  "dataset_sha256": "25355463b9da29992a6ac5e946b4ba5e8e2e6aecc01c677a8af62e18e780b202",
+  "seed": 42,
+  "sklearn_version": "1.9.1",
+  "data_source": "100% sintético; cenários escritos no gerador",
+  "split": "75/25 estratificado por scenario_id; TF-IDF ajustado somente no treino",
+  "train_examples": 144,
+  "test_examples": 48,
+  "train_scenarios": [
+    "acesso-00",
+    "acesso-01",
+    "acesso-02",
+    "acesso-04",
+    "acesso-05",
+    "acesso-08",
+    "acesso-09",
+    "acesso-10",
+    "acesso-11",
+    "cancelamento-00",
+    "cancelamento-01",
+    "cancelamento-03",
+    "cancelamento-04",
+    "cancelamento-05",
+    "cancelamento-06",
+    "cancelamento-08",
+    "cancelamento-09",
+    "cancelamento-10",
+    "cobranca-00",
+    "cobranca-01",
+    "cobranca-02",
+    "cobranca-03",
+    "cobranca-04",
+    "cobranca-06",
+    "cobranca-07",
+    "cobranca-08",
+    "cobranca-10",
+    "erro_tecnico-00",
+    "erro_tecnico-01",
+    "erro_tecnico-04",
+    "erro_tecnico-05",
+    "erro_tecnico-07",
+    "erro_tecnico-08",
+    "erro_tecnico-09",
+    "erro_tecnico-10",
+    "erro_tecnico-11"
+  ],
+  "test_scenarios": [
+    "acesso-03",
+    "acesso-06",
+    "acesso-07",
+    "cancelamento-02",
+    "cancelamento-07",
+    "cancelamento-11",
+    "cobranca-05",
+    "cobranca-09",
+    "cobranca-11",
+    "erro_tecnico-02",
+    "erro_tecnico-03",
+    "erro_tecnico-06"
+  ],
+  "labels": [
+    "acesso",
+    "cancelamento",
+    "cobranca",
+    "erro_tecnico"
+  ],
+  "macro_f1": 0.9365079365079365,
+  "baseline_macro_f1": 0.1,
+  "confusion_matrix": [
+    [
+      12,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      12,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      12,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      9
+    ]
+  ],
+  "classification_report": {
+    "acesso": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 12.0
+    },
+    "cancelamento": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 12.0
+    },
+    "cobranca": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.8888888888888888,
+      "support": 12.0
+    },
+    "erro_tecnico": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1-score": 0.8571428571428571,
+      "support": 12.0
+    },
+    "accuracy": 0.9375,
+    "macro avg": {
+      "precision": 0.95,
+      "recall": 0.9375,
+      "f1-score": 0.9365079365079365,
+      "support": 48.0
+    },
+    "weighted avg": {
+      "precision": 0.9500000000000001,
+      "recall": 0.9375,
+      "f1-score": 0.9365079365079364,
+      "support": 48.0
+    }
+  },
+  "errors": [
+    {
+      "id": "erro_tecnico-06-0",
+      "text": "Olá, Recebo uma mensagem de erro ao enviar arquivos. Podem verificar?",
+      "expected": "erro_tecnico",
+      "predicted": "cobranca"
+    },
+    {
+      "id": "erro_tecnico-06-1",
+      "text": "Bom dia! Recebo uma mensagem de erro ao enviar arquivos. Isso aconteceu hoje.",
+      "expected": "erro_tecnico",
+      "predicted": "cobranca"
+    },
+    {
+      "id": "erro_tecnico-06-2",
+      "text": "Preciso de ajuda: Recebo uma mensagem de erro ao enviar arquivos. Aguardo orientação.",
+      "expected": "erro_tecnico",
+      "predicted": "cobranca"
+    }
+  ],
+  "limitation": "Holdout sintético pequeno e próximo do gerador; não estima desempenho em clientes reais. Scores não calibrados."
+}
