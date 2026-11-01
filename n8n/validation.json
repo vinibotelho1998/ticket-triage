@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-10-27T13:11:17.840827+00:00",
+  "base_url": "http://127.0.0.1:5678",
+  "workflow_id": "portfolioTicket1",
+  "transport": "real HTTP; no mocks",
+  "cases": [
+    {
+      "case": "prediction",
+      "status": 200,
+      "label": "acesso",
+      "model_version": "a58d015b184527ab"
+    },
+    {
+      "case": "empty_text",
+      "status": 422,
+      "validation_errors": 1
+    },
+    {
+      "case": "unexpected_field",
+      "status": 422,
+      "validation_errors": 1
+    }
+  ],
+  "status": "passed"
+}

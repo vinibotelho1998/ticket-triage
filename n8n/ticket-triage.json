@@ -1,0 +1,62 @@
+{
+  "id": "portfolioTicket1",
+  "name": "Ticket Triage - demonstração local",
+  "nodes": [
+    {
+      "parameters": {"httpMethod": "POST", "path": "ticket-triage", "responseMode": "responseNode", "options": {}},
+      "id": "e2f531ce-b43b-4825-a617-a16cb7150cda",
+      "name": "Receber chamado",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 100],
+      "webhookId": "acda0ee6-b351-4871-905e-247b248df172"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://ticket-triage:8001/predict",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.body) }}",
+        "options": {"timeout": 10000, "response": {"response": {"fullResponse": true, "neverError": true, "responseFormat": "json"}}}
+      },
+      "id": "842b078c-8d85-4a9c-80ad-6f5c16cd7f5a",
+      "name": "Classificar na API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [260, 100]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json.body }}",
+        "options": {"responseCode": "={{ $json.statusCode }}"}
+      },
+      "id": "c558f0ac-2c22-484b-9334-3c5a8a842f3f",
+      "name": "Responder com status da API",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [520, 100]
+    },
+    {
+      "parameters": {
+        "content": "## Integração local\nAPI pelo DNS Compose: http://ticket-triage:8001/predict. n8n e API precisam estar na mesma rede. Não é necessário liberar acesso a variáveis de ambiente nos nós.\nImporte e publique o workflow portfolioTicket1. Após publish via CLI, reinicie n8n para registrar /webhook/ticket-triage.\nEnvie um JSON com text. O fluxo preserva o corpo completo e os códigos da API, incluindo 422.\nPara API no host fora do Compose, ajuste a URL manualmente. Arquivo importado inativo, sem credenciais ou envios externos.",
+        "height": 300,
+        "width": 820
+      },
+      "id": "57ebd918-b2a0-4c06-8f5a-8f733bf4125e",
+      "name": "Como configurar",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-50, -250]
+    }
+  ],
+  "connections": {
+    "Receber chamado": {"main": [[{"node": "Classificar na API", "type": "main", "index": 0}]]},
+    "Classificar na API": {"main": [[{"node": "Responder com status da API", "type": "main", "index": 0}]]}
+  },
+  "active": false,
+  "settings": {"executionOrder": "v1"},
+  "pinData": {},
+  "tags": []
+}
