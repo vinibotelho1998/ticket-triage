@@ -4,7 +4,7 @@
 
 Um chamado chega em texto livre. A API sugere uma das quatro categorias — **acesso, cancelamento, cobrança ou erro técnico** — e registra a predição para que possa receber uma correção humana.
 
-O classificador combina **TF-IDF e regressão logística**. FastAPI expõe a previsão; SQLite guarda o histórico mínimo e o feedback. Um workflow n8n demonstra a integração por webhook.
+O classificador supervisionado usa **TF-IDF para representar o texto e regressão logística para aprender as categorias**. FastAPI expõe a previsão; SQLite guarda o histórico mínimo e o feedback. Um workflow n8n demonstra a integração por webhook.
 
 > O modelo é treinado com 192 chamados sintéticos. A avaliação mede esse cenário controlado, não o desempenho em atendimentos reais.
 
