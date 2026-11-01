@@ -1,0 +1,193 @@
+id,scenario_id,text,label,source
+erro_tecnico-06-0,erro_tecnico-06,"Olá, Recebo uma mensagem de erro ao enviar arquivos. Podem verificar?",erro_tecnico,synthetic-template-v1
+acesso-10-2,acesso-10,Preciso de ajuda: O acesso foi negado mesmo com a senha correta. Aguardo orientação.,acesso,synthetic-template-v1
+acesso-00-2,acesso-00,"Preciso de ajuda: Não consigo entrar na conta, minha senha foi recusada. Aguardo orientação.",acesso,synthetic-template-v1
+erro_tecnico-02-0,erro_tecnico-02,"Olá, O sistema retorna erro 500 ao salvar um arquivo. Podem verificar?",erro_tecnico,synthetic-template-v1
+erro_tecnico-05-3,erro_tecnico-05,O painel está lento e o relatório não carrega.,erro_tecnico,synthetic-template-v1
+acesso-03-0,acesso-03,"Olá, Minha conta está bloqueada e não consigo acessar. Podem verificar?",acesso,synthetic-template-v1
+cancelamento-07-2,cancelamento-07,Preciso de ajuda: Gostaria de encerrar meu contrato de assinatura. Aguardo orientação.,cancelamento,synthetic-template-v1
+acesso-03-1,acesso-03,Bom dia! Minha conta está bloqueada e não consigo acessar. Isso aconteceu hoje.,acesso,synthetic-template-v1
+cobranca-06-0,cobranca-06,"Olá, Como atualizar o cartão usado no pagamento. Podem verificar?",cobranca,synthetic-template-v1
+cancelamento-05-1,cancelamento-05,Bom dia! Solicito cancelamento definitivo do meu plano. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+acesso-00-3,acesso-00,"Não consigo entrar na conta, minha senha foi recusada.",acesso,synthetic-template-v1
+erro_tecnico-09-1,erro_tecnico-09,Bom dia! O aplicativo apresenta falha ao abrir a configuração. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+acesso-07-2,acesso-07,Preciso de ajuda: Perdi o autenticador e não consigo fazer login. Aguardo orientação.,acesso,synthetic-template-v1
+erro_tecnico-04-1,erro_tecnico-04,Bom dia! O botão de exportar não funciona e aparece um erro. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+erro_tecnico-05-1,erro_tecnico-05,Bom dia! O painel está lento e o relatório não carrega. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+acesso-03-3,acesso-03,Minha conta está bloqueada e não consigo acessar.,acesso,synthetic-template-v1
+erro_tecnico-02-3,erro_tecnico-02,O sistema retorna erro 500 ao salvar um arquivo.,erro_tecnico,synthetic-template-v1
+acesso-09-0,acesso-09,"Olá, A confirmação de login por email não funciona. Podem verificar?",acesso,synthetic-template-v1
+cobranca-08-3,cobranca-08,O boleto venceu e preciso pagar a fatura.,cobranca,synthetic-template-v1
+acesso-11-0,acesso-11,"Olá, Não recebo o código para desbloquear minha conta. Podem verificar?",acesso,synthetic-template-v1
+acesso-01-1,acesso-01,Bom dia! Esqueci a senha e preciso recuperar meu acesso. Isso aconteceu hoje.,acesso,synthetic-template-v1
+cancelamento-01-1,cancelamento-01,Bom dia! Como faço o cancelamento da assinatura mensal. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+cobranca-01-1,cobranca-01,Bom dia! Preciso da segunda via do boleto de pagamento. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cancelamento-07-3,cancelamento-07,Gostaria de encerrar meu contrato de assinatura.,cancelamento,synthetic-template-v1
+cancelamento-04-0,cancelamento-04,"Olá, Quero parar de usar o serviço e cancelar o contrato. Podem verificar?",cancelamento,synthetic-template-v1
+cancelamento-06-1,cancelamento-06,Bom dia! Desejo desativar a renovação automática da assinatura. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+acesso-09-1,acesso-09,Bom dia! A confirmação de login por email não funciona. Isso aconteceu hoje.,acesso,synthetic-template-v1
+cobranca-06-3,cobranca-06,Como atualizar o cartão usado no pagamento.,cobranca,synthetic-template-v1
+cobranca-08-0,cobranca-08,"Olá, O boleto venceu e preciso pagar a fatura. Podem verificar?",cobranca,synthetic-template-v1
+cobranca-04-3,cobranca-04,Quero uma nota fiscal referente ao pagamento.,cobranca,synthetic-template-v1
+erro_tecnico-03-0,erro_tecnico-03,"Olá, O aplicativo fecha sozinho ao carregar uma imagem. Podem verificar?",erro_tecnico,synthetic-template-v1
+cancelamento-04-2,cancelamento-04,Preciso de ajuda: Quero parar de usar o serviço e cancelar o contrato. Aguardo orientação.,cancelamento,synthetic-template-v1
+cobranca-07-0,cobranca-07,"Olá, Preciso de estorno de uma cobrança duplicada. Podem verificar?",cobranca,synthetic-template-v1
+erro_tecnico-00-3,erro_tecnico-00,O aplicativo trava quando tento exportar o relatório.,erro_tecnico,synthetic-template-v1
+acesso-08-0,acesso-08,"Olá, Quero redefinir a senha para acessar a conta. Podem verificar?",acesso,synthetic-template-v1
+cancelamento-01-0,cancelamento-01,"Olá, Como faço o cancelamento da assinatura mensal. Podem verificar?",cancelamento,synthetic-template-v1
+erro_tecnico-10-3,erro_tecnico-10,A tela do painel desaparece depois da atualização.,erro_tecnico,synthetic-template-v1
+cobranca-11-0,cobranca-11,"Olá, Foi cobrado um valor maior do que consta na fatura. Podem verificar?",cobranca,synthetic-template-v1
+acesso-02-2,acesso-02,Preciso de ajuda: O código de autenticação não chegou para fazer login. Aguardo orientação.,acesso,synthetic-template-v1
+cancelamento-03-0,cancelamento-03,"Olá, Preciso encerrar a assinatura antes da renovação. Podem verificar?",cancelamento,synthetic-template-v1
+cancelamento-09-0,cancelamento-09,"Olá, Quero confirmar o encerramento da minha assinatura. Podem verificar?",cancelamento,synthetic-template-v1
+cobranca-07-1,cobranca-07,Bom dia! Preciso de estorno de uma cobrança duplicada. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cobranca-04-1,cobranca-04,Bom dia! Quero uma nota fiscal referente ao pagamento. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cobranca-01-0,cobranca-01,"Olá, Preciso da segunda via do boleto de pagamento. Podem verificar?",cobranca,synthetic-template-v1
+erro_tecnico-11-0,erro_tecnico-11,"Olá, O sistema fica carregando sem concluir a operação. Podem verificar?",erro_tecnico,synthetic-template-v1
+cobranca-03-3,cobranca-03,Meu pagamento foi feito mas o boleto está em aberto.,cobranca,synthetic-template-v1
+cobranca-10-2,cobranca-10,Preciso de ajuda: Não encontro o recibo do pagamento da mensalidade. Aguardo orientação.,cobranca,synthetic-template-v1
+cobranca-00-3,cobranca-00,A cobrança veio duplicada na fatura do cartão.,cobranca,synthetic-template-v1
+cancelamento-10-2,cancelamento-10,Preciso de ajuda: Qual é o procedimento para cancelar o serviço. Aguardo orientação.,cancelamento,synthetic-template-v1
+cancelamento-03-1,cancelamento-03,Bom dia! Preciso encerrar a assinatura antes da renovação. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+acesso-00-0,acesso-00,"Olá, Não consigo entrar na conta, minha senha foi recusada. Podem verificar?",acesso,synthetic-template-v1
+erro_tecnico-10-1,erro_tecnico-10,Bom dia! A tela do painel desaparece depois da atualização. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+acesso-04-0,acesso-04,"Olá, Preciso trocar o email usado no login da conta. Podem verificar?",acesso,synthetic-template-v1
+cancelamento-07-0,cancelamento-07,"Olá, Gostaria de encerrar meu contrato de assinatura. Podem verificar?",cancelamento,synthetic-template-v1
+cobranca-08-2,cobranca-08,Preciso de ajuda: O boleto venceu e preciso pagar a fatura. Aguardo orientação.,cobranca,synthetic-template-v1
+erro_tecnico-03-3,erro_tecnico-03,O aplicativo fecha sozinho ao carregar uma imagem.,erro_tecnico,synthetic-template-v1
+erro_tecnico-10-2,erro_tecnico-10,Preciso de ajuda: A tela do painel desaparece depois da atualização. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+erro_tecnico-11-3,erro_tecnico-11,O sistema fica carregando sem concluir a operação.,erro_tecnico,synthetic-template-v1
+cobranca-11-2,cobranca-11,Preciso de ajuda: Foi cobrado um valor maior do que consta na fatura. Aguardo orientação.,cobranca,synthetic-template-v1
+acesso-09-2,acesso-09,Preciso de ajuda: A confirmação de login por email não funciona. Aguardo orientação.,acesso,synthetic-template-v1
+cobranca-02-0,cobranca-02,"Olá, O valor cobrado na fatura está errado. Podem verificar?",cobranca,synthetic-template-v1
+acesso-10-3,acesso-10,O acesso foi negado mesmo com a senha correta.,acesso,synthetic-template-v1
+cobranca-06-2,cobranca-06,Preciso de ajuda: Como atualizar o cartão usado no pagamento. Aguardo orientação.,cobranca,synthetic-template-v1
+cobranca-03-1,cobranca-03,Bom dia! Meu pagamento foi feito mas o boleto está em aberto. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+acesso-04-3,acesso-04,Preciso trocar o email usado no login da conta.,acesso,synthetic-template-v1
+acesso-03-2,acesso-03,Preciso de ajuda: Minha conta está bloqueada e não consigo acessar. Aguardo orientação.,acesso,synthetic-template-v1
+erro_tecnico-06-3,erro_tecnico-06,Recebo uma mensagem de erro ao enviar arquivos.,erro_tecnico,synthetic-template-v1
+cobranca-10-0,cobranca-10,"Olá, Não encontro o recibo do pagamento da mensalidade. Podem verificar?",cobranca,synthetic-template-v1
+erro_tecnico-07-0,erro_tecnico-07,"Olá, A página trava e não consigo salvar as alterações. Podem verificar?",erro_tecnico,synthetic-template-v1
+cancelamento-04-1,cancelamento-04,Bom dia! Quero parar de usar o serviço e cancelar o contrato. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+cancelamento-08-0,cancelamento-08,"Olá, Podem cancelar o plano anual da minha conta. Podem verificar?",cancelamento,synthetic-template-v1
+cobranca-01-2,cobranca-01,Preciso de ajuda: Preciso da segunda via do boleto de pagamento. Aguardo orientação.,cobranca,synthetic-template-v1
+acesso-11-2,acesso-11,Preciso de ajuda: Não recebo o código para desbloquear minha conta. Aguardo orientação.,acesso,synthetic-template-v1
+cancelamento-11-2,cancelamento-11,Preciso de ajuda: Meu pedido de cancelamento do plano não foi concluído. Aguardo orientação.,cancelamento,synthetic-template-v1
+cancelamento-01-2,cancelamento-01,Preciso de ajuda: Como faço o cancelamento da assinatura mensal. Aguardo orientação.,cancelamento,synthetic-template-v1
+cobranca-09-2,cobranca-09,Preciso de ajuda: O pagamento do cartão foi recusado na cobrança. Aguardo orientação.,cobranca,synthetic-template-v1
+cobranca-02-1,cobranca-02,Bom dia! O valor cobrado na fatura está errado. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cobranca-04-0,cobranca-04,"Olá, Quero uma nota fiscal referente ao pagamento. Podem verificar?",cobranca,synthetic-template-v1
+cobranca-01-3,cobranca-01,Preciso da segunda via do boleto de pagamento.,cobranca,synthetic-template-v1
+cobranca-03-2,cobranca-03,Preciso de ajuda: Meu pagamento foi feito mas o boleto está em aberto. Aguardo orientação.,cobranca,synthetic-template-v1
+erro_tecnico-00-0,erro_tecnico-00,"Olá, O aplicativo trava quando tento exportar o relatório. Podem verificar?",erro_tecnico,synthetic-template-v1
+acesso-08-1,acesso-08,Bom dia! Quero redefinir a senha para acessar a conta. Isso aconteceu hoje.,acesso,synthetic-template-v1
+acesso-04-2,acesso-04,Preciso de ajuda: Preciso trocar o email usado no login da conta. Aguardo orientação.,acesso,synthetic-template-v1
+cobranca-09-3,cobranca-09,O pagamento do cartão foi recusado na cobrança.,cobranca,synthetic-template-v1
+erro_tecnico-00-1,erro_tecnico-00,Bom dia! O aplicativo trava quando tento exportar o relatório. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+erro_tecnico-06-1,erro_tecnico-06,Bom dia! Recebo uma mensagem de erro ao enviar arquivos. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+cancelamento-03-3,cancelamento-03,Preciso encerrar a assinatura antes da renovação.,cancelamento,synthetic-template-v1
+cancelamento-08-3,cancelamento-08,Podem cancelar o plano anual da minha conta.,cancelamento,synthetic-template-v1
+erro_tecnico-01-1,erro_tecnico-01,Bom dia! A tela fica branca ao abrir o painel do sistema. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+cancelamento-11-3,cancelamento-11,Meu pedido de cancelamento do plano não foi concluído.,cancelamento,synthetic-template-v1
+cancelamento-06-0,cancelamento-06,"Olá, Desejo desativar a renovação automática da assinatura. Podem verificar?",cancelamento,synthetic-template-v1
+acesso-06-3,acesso-06,O link de recuperação de senha expirou.,acesso,synthetic-template-v1
+erro_tecnico-08-2,erro_tecnico-08,Preciso de ajuda: O relatório exportado está vazio por um erro do sistema. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+cobranca-02-2,cobranca-02,Preciso de ajuda: O valor cobrado na fatura está errado. Aguardo orientação.,cobranca,synthetic-template-v1
+cancelamento-00-3,cancelamento-00,Quero cancelar minha assinatura e encerrar o plano.,cancelamento,synthetic-template-v1
+erro_tecnico-04-0,erro_tecnico-04,"Olá, O botão de exportar não funciona e aparece um erro. Podem verificar?",erro_tecnico,synthetic-template-v1
+acesso-01-0,acesso-01,"Olá, Esqueci a senha e preciso recuperar meu acesso. Podem verificar?",acesso,synthetic-template-v1
+acesso-07-1,acesso-07,Bom dia! Perdi o autenticador e não consigo fazer login. Isso aconteceu hoje.,acesso,synthetic-template-v1
+erro_tecnico-08-1,erro_tecnico-08,Bom dia! O relatório exportado está vazio por um erro do sistema. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+cobranca-00-2,cobranca-00,Preciso de ajuda: A cobrança veio duplicada na fatura do cartão. Aguardo orientação.,cobranca,synthetic-template-v1
+acesso-10-1,acesso-10,Bom dia! O acesso foi negado mesmo com a senha correta. Isso aconteceu hoje.,acesso,synthetic-template-v1
+cobranca-05-2,cobranca-05,Preciso de ajuda: A fatura mostra uma cobrança que não reconheço. Aguardo orientação.,cobranca,synthetic-template-v1
+erro_tecnico-11-2,erro_tecnico-11,Preciso de ajuda: O sistema fica carregando sem concluir a operação. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+erro_tecnico-09-3,erro_tecnico-09,O aplicativo apresenta falha ao abrir a configuração.,erro_tecnico,synthetic-template-v1
+erro_tecnico-01-0,erro_tecnico-01,"Olá, A tela fica branca ao abrir o painel do sistema. Podem verificar?",erro_tecnico,synthetic-template-v1
+erro_tecnico-05-0,erro_tecnico-05,"Olá, O painel está lento e o relatório não carrega. Podem verificar?",erro_tecnico,synthetic-template-v1
+cobranca-06-1,cobranca-06,Bom dia! Como atualizar o cartão usado no pagamento. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cancelamento-00-0,cancelamento-00,"Olá, Quero cancelar minha assinatura e encerrar o plano. Podem verificar?",cancelamento,synthetic-template-v1
+cobranca-09-0,cobranca-09,"Olá, O pagamento do cartão foi recusado na cobrança. Podem verificar?",cobranca,synthetic-template-v1
+cobranca-07-2,cobranca-07,Preciso de ajuda: Preciso de estorno de uma cobrança duplicada. Aguardo orientação.,cobranca,synthetic-template-v1
+erro_tecnico-06-2,erro_tecnico-06,Preciso de ajuda: Recebo uma mensagem de erro ao enviar arquivos. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+cobranca-07-3,cobranca-07,Preciso de estorno de uma cobrança duplicada.,cobranca,synthetic-template-v1
+cancelamento-05-0,cancelamento-05,"Olá, Solicito cancelamento definitivo do meu plano. Podem verificar?",cancelamento,synthetic-template-v1
+acesso-05-1,acesso-05,Bom dia! A senha nova não funciona para entrar no sistema. Isso aconteceu hoje.,acesso,synthetic-template-v1
+cancelamento-08-1,cancelamento-08,Bom dia! Podem cancelar o plano anual da minha conta. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+cancelamento-07-1,cancelamento-07,Bom dia! Gostaria de encerrar meu contrato de assinatura. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+acesso-02-1,acesso-02,Bom dia! O código de autenticação não chegou para fazer login. Isso aconteceu hoje.,acesso,synthetic-template-v1
+cancelamento-08-2,cancelamento-08,Preciso de ajuda: Podem cancelar o plano anual da minha conta. Aguardo orientação.,cancelamento,synthetic-template-v1
+erro_tecnico-03-2,erro_tecnico-03,Preciso de ajuda: O aplicativo fecha sozinho ao carregar uma imagem. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+cobranca-05-3,cobranca-05,A fatura mostra uma cobrança que não reconheço.,cobranca,synthetic-template-v1
+cancelamento-10-1,cancelamento-10,Bom dia! Qual é o procedimento para cancelar o serviço. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+acesso-08-2,acesso-08,Preciso de ajuda: Quero redefinir a senha para acessar a conta. Aguardo orientação.,acesso,synthetic-template-v1
+cancelamento-09-1,cancelamento-09,Bom dia! Quero confirmar o encerramento da minha assinatura. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+erro_tecnico-02-1,erro_tecnico-02,Bom dia! O sistema retorna erro 500 ao salvar um arquivo. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+acesso-11-1,acesso-11,Bom dia! Não recebo o código para desbloquear minha conta. Isso aconteceu hoje.,acesso,synthetic-template-v1
+acesso-11-3,acesso-11,Não recebo o código para desbloquear minha conta.,acesso,synthetic-template-v1
+cobranca-09-1,cobranca-09,Bom dia! O pagamento do cartão foi recusado na cobrança. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cancelamento-11-1,cancelamento-11,Bom dia! Meu pedido de cancelamento do plano não foi concluído. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+cobranca-05-0,cobranca-05,"Olá, A fatura mostra uma cobrança que não reconheço. Podem verificar?",cobranca,synthetic-template-v1
+erro_tecnico-03-1,erro_tecnico-03,Bom dia! O aplicativo fecha sozinho ao carregar uma imagem. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+erro_tecnico-09-0,erro_tecnico-09,"Olá, O aplicativo apresenta falha ao abrir a configuração. Podem verificar?",erro_tecnico,synthetic-template-v1
+acesso-06-1,acesso-06,Bom dia! O link de recuperação de senha expirou. Isso aconteceu hoje.,acesso,synthetic-template-v1
+erro_tecnico-07-2,erro_tecnico-07,Preciso de ajuda: A página trava e não consigo salvar as alterações. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+cobranca-11-1,cobranca-11,Bom dia! Foi cobrado um valor maior do que consta na fatura. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cancelamento-06-2,cancelamento-06,Preciso de ajuda: Desejo desativar a renovação automática da assinatura. Aguardo orientação.,cancelamento,synthetic-template-v1
+cancelamento-02-2,cancelamento-02,"Preciso de ajuda: Não quero renovar meu plano, desejo cancelar. Aguardo orientação.",cancelamento,synthetic-template-v1
+erro_tecnico-00-2,erro_tecnico-00,Preciso de ajuda: O aplicativo trava quando tento exportar o relatório. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+acesso-04-1,acesso-04,Bom dia! Preciso trocar o email usado no login da conta. Isso aconteceu hoje.,acesso,synthetic-template-v1
+cancelamento-00-1,cancelamento-00,Bom dia! Quero cancelar minha assinatura e encerrar o plano. Isso aconteceu hoje.,cancelamento,synthetic-template-v1
+cancelamento-11-0,cancelamento-11,"Olá, Meu pedido de cancelamento do plano não foi concluído. Podem verificar?",cancelamento,synthetic-template-v1
+cancelamento-06-3,cancelamento-06,Desejo desativar a renovação automática da assinatura.,cancelamento,synthetic-template-v1
+acesso-05-0,acesso-05,"Olá, A senha nova não funciona para entrar no sistema. Podem verificar?",acesso,synthetic-template-v1
+cobranca-00-0,cobranca-00,"Olá, A cobrança veio duplicada na fatura do cartão. Podem verificar?",cobranca,synthetic-template-v1
+acesso-07-3,acesso-07,Perdi o autenticador e não consigo fazer login.,acesso,synthetic-template-v1
+cobranca-10-1,cobranca-10,Bom dia! Não encontro o recibo do pagamento da mensalidade. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cobranca-05-1,cobranca-05,Bom dia! A fatura mostra uma cobrança que não reconheço. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+acesso-02-3,acesso-02,O código de autenticação não chegou para fazer login.,acesso,synthetic-template-v1
+cancelamento-04-3,cancelamento-04,Quero parar de usar o serviço e cancelar o contrato.,cancelamento,synthetic-template-v1
+cancelamento-10-0,cancelamento-10,"Olá, Qual é o procedimento para cancelar o serviço. Podem verificar?",cancelamento,synthetic-template-v1
+cancelamento-10-3,cancelamento-10,Qual é o procedimento para cancelar o serviço.,cancelamento,synthetic-template-v1
+acesso-06-0,acesso-06,"Olá, O link de recuperação de senha expirou. Podem verificar?",acesso,synthetic-template-v1
+cobranca-00-1,cobranca-00,Bom dia! A cobrança veio duplicada na fatura do cartão. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+erro_tecnico-08-0,erro_tecnico-08,"Olá, O relatório exportado está vazio por um erro do sistema. Podem verificar?",erro_tecnico,synthetic-template-v1
+erro_tecnico-10-0,erro_tecnico-10,"Olá, A tela do painel desaparece depois da atualização. Podem verificar?",erro_tecnico,synthetic-template-v1
+cancelamento-09-2,cancelamento-09,Preciso de ajuda: Quero confirmar o encerramento da minha assinatura. Aguardo orientação.,cancelamento,synthetic-template-v1
+erro_tecnico-07-3,erro_tecnico-07,A página trava e não consigo salvar as alterações.,erro_tecnico,synthetic-template-v1
+acesso-09-3,acesso-09,A confirmação de login por email não funciona.,acesso,synthetic-template-v1
+erro_tecnico-04-2,erro_tecnico-04,Preciso de ajuda: O botão de exportar não funciona e aparece um erro. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+cancelamento-09-3,cancelamento-09,Quero confirmar o encerramento da minha assinatura.,cancelamento,synthetic-template-v1
+erro_tecnico-08-3,erro_tecnico-08,O relatório exportado está vazio por um erro do sistema.,erro_tecnico,synthetic-template-v1
+acesso-10-0,acesso-10,"Olá, O acesso foi negado mesmo com a senha correta. Podem verificar?",acesso,synthetic-template-v1
+acesso-00-1,acesso-00,"Bom dia! Não consigo entrar na conta, minha senha foi recusada. Isso aconteceu hoje.",acesso,synthetic-template-v1
+cancelamento-05-3,cancelamento-05,Solicito cancelamento definitivo do meu plano.,cancelamento,synthetic-template-v1
+erro_tecnico-01-2,erro_tecnico-01,Preciso de ajuda: A tela fica branca ao abrir o painel do sistema. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+cobranca-04-2,cobranca-04,Preciso de ajuda: Quero uma nota fiscal referente ao pagamento. Aguardo orientação.,cobranca,synthetic-template-v1
+cancelamento-02-0,cancelamento-02,"Olá, Não quero renovar meu plano, desejo cancelar. Podem verificar?",cancelamento,synthetic-template-v1
+cobranca-02-3,cobranca-02,O valor cobrado na fatura está errado.,cobranca,synthetic-template-v1
+erro_tecnico-09-2,erro_tecnico-09,Preciso de ajuda: O aplicativo apresenta falha ao abrir a configuração. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+erro_tecnico-05-2,erro_tecnico-05,Preciso de ajuda: O painel está lento e o relatório não carrega. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+cancelamento-00-2,cancelamento-00,Preciso de ajuda: Quero cancelar minha assinatura e encerrar o plano. Aguardo orientação.,cancelamento,synthetic-template-v1
+cobranca-11-3,cobranca-11,Foi cobrado um valor maior do que consta na fatura.,cobranca,synthetic-template-v1
+erro_tecnico-11-1,erro_tecnico-11,Bom dia! O sistema fica carregando sem concluir a operação. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+erro_tecnico-02-2,erro_tecnico-02,Preciso de ajuda: O sistema retorna erro 500 ao salvar um arquivo. Aguardo orientação.,erro_tecnico,synthetic-template-v1
+cobranca-08-1,cobranca-08,Bom dia! O boleto venceu e preciso pagar a fatura. Isso aconteceu hoje.,cobranca,synthetic-template-v1
+cancelamento-02-3,cancelamento-02,"Não quero renovar meu plano, desejo cancelar.",cancelamento,synthetic-template-v1
+cancelamento-01-3,cancelamento-01,Como faço o cancelamento da assinatura mensal.,cancelamento,synthetic-template-v1
+acesso-05-3,acesso-05,A senha nova não funciona para entrar no sistema.,acesso,synthetic-template-v1
+acesso-01-3,acesso-01,Esqueci a senha e preciso recuperar meu acesso.,acesso,synthetic-template-v1
+acesso-02-0,acesso-02,"Olá, O código de autenticação não chegou para fazer login. Podem verificar?",acesso,synthetic-template-v1
+cobranca-03-0,cobranca-03,"Olá, Meu pagamento foi feito mas o boleto está em aberto. Podem verificar?",cobranca,synthetic-template-v1
+erro_tecnico-01-3,erro_tecnico-01,A tela fica branca ao abrir o painel do sistema.,erro_tecnico,synthetic-template-v1
+acesso-05-2,acesso-05,Preciso de ajuda: A senha nova não funciona para entrar no sistema. Aguardo orientação.,acesso,synthetic-template-v1
+cobranca-10-3,cobranca-10,Não encontro o recibo do pagamento da mensalidade.,cobranca,synthetic-template-v1
+erro_tecnico-07-1,erro_tecnico-07,Bom dia! A página trava e não consigo salvar as alterações. Isso aconteceu hoje.,erro_tecnico,synthetic-template-v1
+acesso-06-2,acesso-06,Preciso de ajuda: O link de recuperação de senha expirou. Aguardo orientação.,acesso,synthetic-template-v1
+acesso-08-3,acesso-08,Quero redefinir a senha para acessar a conta.,acesso,synthetic-template-v1
+cancelamento-02-1,cancelamento-02,"Bom dia! Não quero renovar meu plano, desejo cancelar. Isso aconteceu hoje.",cancelamento,synthetic-template-v1
+cancelamento-03-2,cancelamento-03,Preciso de ajuda: Preciso encerrar a assinatura antes da renovação. Aguardo orientação.,cancelamento,synthetic-template-v1
+cancelamento-05-2,cancelamento-05,Preciso de ajuda: Solicito cancelamento definitivo do meu plano. Aguardo orientação.,cancelamento,synthetic-template-v1
+acesso-01-2,acesso-01,Preciso de ajuda: Esqueci a senha e preciso recuperar meu acesso. Aguardo orientação.,acesso,synthetic-template-v1
+acesso-07-0,acesso-07,"Olá, Perdi o autenticador e não consigo fazer login. Podem verificar?",acesso,synthetic-template-v1
+erro_tecnico-04-3,erro_tecnico-04,O botão de exportar não funciona e aparece um erro.,erro_tecnico,synthetic-template-v1
