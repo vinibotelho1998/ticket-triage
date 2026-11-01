@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "project": "01-ticket-triage",
+  "run_id": "fb64fcd462a34679bd6021d3d06c5e38",
+  "kind": "synthetic_fixture",
+  "started_at": "2026-10-27T12:53:33.965080+00:00",
+  "status": "passed",
+  "base_url": "http://127.0.0.1:8001",
+  "data_provenance": "Mensagem fictícia de demonstração; classificador treinado com exemplos sintéticos.",
+  "timing_note": "Observed wall time for one execution; not a performance benchmark.",
+  "credentials_saved": false,
+  "steps": [
+    {
+      "id": "prediction",
+      "title": "Classificação do chamado",
+      "timestamp": "2026-10-27T12:53:33.965080+00:00",
+      "endpoint": "http://127.0.0.1:8001/predict",
+      "method": "POST",
+      "request": {
+        "text": "Não consigo entrar na minha conta. Esqueci a senha e preciso recuperar o acesso."
+      },
+      "status_code": 200,
+      "response": {
+        "prediction_id": "bff0b53c-9834-4009-8110-e7d4a1d0d34e",
+        "label": "acesso",
+        "score": 0.9009062686619549,
+        "scores": {
+          "acesso": 0.9009062686619549,
+          "cancelamento": 0.03272324760972342,
+          "cobranca": 0.030061866710749632,
+          "erro_tecnico": 0.03630861701757207
+        },
+        "model_version": "a58d015b184527ab",
+        "score_note": "Score do classificador não calibrado; não representa garantia de acerto."
+      },
+      "duration_ms": 32.854,
+      "status": "passed",
+      "checks": [
+        {
+          "name": "HTTP 200",
+          "passed": true
+        },
+        {
+          "name": "Classificação de acesso",
+          "passed": true
+        },
+        {
+          "name": "Score explicitamente não calibrado",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "feedback",
+      "title": "Correção humana registrada",
+      "timestamp": "2026-10-27T12:53:33.998313+00:00",
+      "endpoint": "http://127.0.0.1:8001/predictions/bff0b53c-9834-4009-8110-e7d4a1d0d34e/feedback",
+      "method": "PUT",
+      "request": {
+        "correct_label": "acesso"
+      },
+      "status_code": 200,
+      "response": {
+        "prediction_id": "bff0b53c-9834-4009-8110-e7d4a1d0d34e",
+        "correct_label": "acesso"
+      },
+      "duration_ms": 30.045,
+      "status": "passed",
+      "checks": [
+        {
+          "name": "HTTP 200",
+          "passed": true
+        },
+        {
+          "name": "Feedback vinculado à predição",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "predicted_label": "acesso",
+    "score": 0.9009062686619549,
+    "score_note": "Score do classificador não calibrado; não representa garantia de acerto.",
+    "scores": {
+      "acesso": 0.9009062686619549,
+      "cancelamento": 0.03272324760972342,
+      "cobranca": 0.030061866710749632,
+      "erro_tecnico": 0.03630861701757207
+    },
+    "model_version": "a58d015b184527ab",
+    "feedback_saved": true
+  },
+  "supporting_evidence": [
+    {
+      "kind": "recorded_offline_evaluation",
+      "path": "reports/evaluation.json",
+      "sha256": "eb4ef697ac0da3e92156c1e267268230b7891fbadf5caecac53e2e9317c6eac8",
+      "read_at": "2026-10-27T12:53:34.032184+00:00",
+      "note": "Existing report read from disk; evaluation was not rerun by this capture script.",
+      "report": {
+        "model_version": "a58d015b184527ab",
+        "data_source": "100% sintético; cenários escritos no gerador",
+        "train_examples": 144,
+        "test_examples": 48,
+        "macro_f1": 0.9365079365079365,
+        "baseline_macro_f1": 0.1,
+        "labels": [
+          "acesso",
+          "cancelamento",
+          "cobranca",
+          "erro_tecnico"
+        ],
+        "confusion_matrix": [
+          [
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            9
+          ]
+        ],
+        "limitation": "Holdout sintético pequeno e próximo do gerador; não estima desempenho em clientes reais. Scores não calibrados."
+      }
+    }
+  ],
+  "finished_at": "2026-10-27T12:53:34.032184+00:00"
+}

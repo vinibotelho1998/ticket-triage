@@ -1,0 +1,30 @@
+{
+  "source": "Browser screenshots of the recorded API presentation; not AI-generated images.",
+  "capture_run_id": "fb64fcd462a34679bd6021d3d06c5e38",
+  "api_capture_started_at": "2026-10-27T12:53:33.965080+00:00",
+  "api_capture_finished_at": "2026-10-27T12:53:34.032184+00:00",
+  "encoded_at": "2026-10-27T13:04:09.568476+00:00",
+  "dimensions": [
+    1265,
+    730
+  ],
+  "frames": 2,
+  "timing": "Replay holds are for readability, not measured request duration.",
+  "source_record": "../demo/run.json",
+  "screenshot_sha256": "0f0d216b870df0a0317e9f6a6f2fcd6750b13fbd809c51a84fbb9f90beee3944",
+  "gif_sha256": "53d59f9c4a12f691836ca5af5b7961efba0dfe5409a0b59d98eab2743b556948",
+  "steps": [
+    {
+      "id": "prediction",
+      "title": "Classificação do chamado",
+      "hold_ms": 1800,
+      "frame_sha256": "0f0d216b870df0a0317e9f6a6f2fcd6750b13fbd809c51a84fbb9f90beee3944"
+    },
+    {
+      "id": "feedback",
+      "title": "Correção humana registrada",
+      "hold_ms": 2800,
+      "frame_sha256": "4f3dc3e55d256a0609e9bfe3d9ac8204b3c35641c08ed4e58fe5cd9b44fc0ee1"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+Plano de commits — Ticket Triage
+
+A sequencia abaixo organiza as mudancas do projeto em commits revisaveis.
+
+1. Empacotamento e dados sintéticos documentados
+git add pyproject.toml requirements.lock .gitignore .env.example src/ticket_triage/__init__.py src/ticket_triage/generate.py data/tickets.csv data/DATA_CARD.md
+git commit -m "feat: adiciona base sintética reproduzível de chamados"
+
+2. Treinamento supervisionado e avaliação por cenário
+git add src/ticket_triage/train.py reports/evaluation.json MODEL_CARD.md
+git commit -m "feat: treina e avalia classificador de chamados com baseline"
+
+3. API com histórico mínimo e feedback humano
+git add src/ticket_triage/api.py src/ticket_triage/store.py
+git commit -m "feat: disponibiliza previsões e registra feedback humano"
+
+4. Testes, integração e execução em contêiner
+git add tests/test_pipeline.py n8n Dockerfile .dockerignore .github/workflows/ci.yml
+git commit -m "test: cobre vazamento de dados, validação e comportamento da API"
+
+5. Documentação de uso e decisões
+   Inclui capa, diagrama, capturas, GIF, painel HTML e metadados da execucao real.
+git add README.md ARCHITECTURE.md docs/PRESENTATION.md docs/assets docs/demo COMMITS.txt LICENSE
+git commit -m "docs: explica configuração, avaliação e arquitetura"
+
