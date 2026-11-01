@@ -1,34 +1,39 @@
-![Ticket Triage — NLP supervisionado](docs/assets/banner.svg)
+![Ticket Triage: classificação de chamados](docs/assets/banner.svg)
 
 # Ticket Triage
 
-Classifica chamados em português nas categorias `acesso`, `cancelamento`, `cobranca` e `erro_tecnico`, com registro de feedback para revisar os resultados. O experimento compara TF-IDF e regressão logística com um baseline, mantendo todas as variações de um cenário na mesma partição.
+Um chamado chega em texto livre. A API sugere uma das quatro categorias — **acesso, cancelamento, cobrança ou erro técnico** — e registra a predição para que possa receber uma correção humana.
 
-**Competência principal:** NLP supervisionado.
+O classificador combina **TF-IDF e regressão logística**. FastAPI expõe a previsão; SQLite guarda o histórico mínimo e o feedback. Um workflow n8n demonstra a integração por webhook.
 
-| IA implementada | Backend | Dados da demonstração | Verificação local |
-| --- | --- | --- | --- |
-| TF-IDF + regressão logística | FastAPI · SQLite · n8n | 192 chamados sintéticos, 48 cenários | 9 testes aprovados |
+> O modelo é treinado com 192 chamados sintéticos. A avaliação mede esse cenário controlado, não o desempenho em atendimentos reais.
 
-[Demonstração e captura](docs/PRESENTATION.md) · [Resultado registrado](reports/evaluation.json) · [Plano de commits](COMMITS.txt)
+## Um chamado em ação
 
-## Demonstração
+No exemplo registrado, uma mensagem sobre acesso é classificada e depois recebe feedback. A captura mostra a resposta da API; o GIF percorre as etapas.
 
-Painel de demonstração com respostas reais da API. A apresentação organiza requisições, resultados e verificações da execução registrada.
+![Classificação de um chamado](docs/assets/screenshot.jpg)
 
-| Captura no navegador | Demonstração animada |
-| :---: | :---: |
-| ![Painel de demonstração do Ticket Triage](docs/assets/screenshot.jpg) | ![Demonstração do fluxo do Ticket Triage](docs/assets/demo.gif) |
+<details><summary>Ver as etapas em movimento</summary>
 
-[Abrir painel local em HTML](docs/demo/index.html) · [Consultar requests, respostas e timestamps](docs/demo/run.json) · [Ver o contrato no Swagger](docs/assets/api-docs.jpg)
+![Classificação e feedback](docs/assets/demo.gif)
 
-Os dados e os limites do cenário estão descritos no [guia da demonstração](docs/PRESENTATION.md). O painel foi preparado para apresentar o backend e suas evidências.
+</details>
 
-## Arquitetura
+[Painel local](docs/demo/index.html) · [Registro da execução](docs/demo/run.json) · [Chamada adicional no Swagger](docs/assets/api-docs.jpg)
 
-![Fluxo de dados e componentes do Ticket Triage](docs/assets/architecture.svg)
+## Contrato e persistência
 
-Do CSV ao classificador e à API, com histórico mínimo e feedback humano persistidos em SQLite. Veja as [decisões técnicas](ARCHITECTURE.md).
+| Rota | Comportamento |
+|---|---|
+| `GET /health` | Prontidão do modelo: 200 ou 503 |
+| `POST /predict` | Valida texto, classifica e registra a predição |
+| `GET /predictions?limit=20` | Histórico recente, de 1 a 100 registros |
+| `PUT /predictions/{id}/feedback` | Cria ou corrige um rótulo humano; ID desconhecido retorna 404 |
+
+SQLite registra identificador, horário UTC, hash do texto, classe, score e versão do modelo. **O texto original não é persistido.** O hash serve para comparação de entradas, não para anonimização garantida; mensagens previsíveis podem ser adivinhadas. Feedback é separado da predição e não dispara retreinamento. Sem os textos, ele não é um novo dataset de treinamento.
+
+Configure `TICKET_MODEL_PATH` e `TICKET_DB_PATH` no ambiente do processo para alterar os caminhos. Exemplo PowerShell: `$env:TICKET_DB_PATH='var/another.sqlite3'`. O arquivo `.env.example` é documentação; não há carregamento automático de `.env`.
 
 ## Executar
 
@@ -82,18 +87,11 @@ Essa avaliação verifica o comportamento dentro do gerador. Ela **não estima q
 
 O campo `score` é a saída de `predict_proba` do classificador e **não foi calibrado**. Um score de 0,8 não significa que o sistema acertará 80% desses casos. A API sempre escolhe uma das quatro classes; ela não detecta assunto desconhecido.
 
-## Contrato e persistência
+## Fluxo do classificador
 
-| Rota | Comportamento |
-|---|---|
-| `GET /health` | Prontidão do modelo: 200 ou 503 |
-| `POST /predict` | Valida texto, classifica e registra a predição |
-| `GET /predictions?limit=20` | Histórico recente, de 1 a 100 registros |
-| `PUT /predictions/{id}/feedback` | Cria ou corrige um rótulo humano; ID desconhecido retorna 404 |
+![Fluxo de dados e componentes do Ticket Triage](docs/assets/architecture.svg)
 
-SQLite registra identificador, horário UTC, hash do texto, classe, score e versão do modelo. **O texto original não é persistido.** O hash serve para comparação de entradas, não para anonimização garantida; mensagens previsíveis podem ser adivinhadas. Feedback é separado da predição e não dispara retreinamento. Sem os textos, ele não é um novo dataset de treinamento.
-
-Configure `TICKET_MODEL_PATH` e `TICKET_DB_PATH` no ambiente do processo para alterar os caminhos. Exemplo PowerShell: `$env:TICKET_DB_PATH='var/another.sqlite3'`. O arquivo `.env.example` é documentação; não há carregamento automático de `.env`.
+Do CSV ao classificador e à API, com histórico mínimo e feedback humano persistidos em SQLite. Veja as [decisões técnicas](ARCHITECTURE.md).
 
 ## n8n
 
@@ -120,6 +118,4 @@ docker build -t ticket-triage .
 docker run --rm -p 127.0.0.1:8001:8001 ticket-triage
 ```
 
-O Dockerfile treina durante o build e executa como usuário sem privilégios. A imagem foi construída e a API participou da validação HTTP real no Compose do ambiente local. Sem volume, o histórico do contêiner é descartado ao removê-lo. O workflow de CI está preparado para este diretório virar um repositório independente.
-
-
+O Dockerfile treina durante o build e executa como usuário sem privilégios. A imagem foi construída e a API participou da validação HTTP real no Compose do ambiente local. Sem volume, o histórico do contêiner é descartado ao removê-lo. O GitHub Actions executa os testes automaticamente.
